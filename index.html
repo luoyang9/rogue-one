@@ -16,6 +16,11 @@
       src: url(Starjedi.ttf); 
     }
 
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
     body {
       background: url('http://wallpaperzone.co/wp-content/uploads/2016/12/rogue-one-death-star-wars-hd-wallpaper.png') no-repeat center center;
       background-size: cover;
@@ -75,6 +80,25 @@
     font-family: starwars;
     font-size: 14px;
   }
+
+   @media (max-width: 600px) {
+     .title {
+       height: 51.8px;
+       width: 237.5px;
+     }
+
+     .status {
+      top: 36px;
+      left: 68px;
+      font-size: 4.5px;
+      color: transparent;
+     }
+
+     .status-starwars {
+      color: #9f8066;
+      font-size: 12px;
+     }
+   }
 
   .link {
    border: 2px solid #9f8066;
