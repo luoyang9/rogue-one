@@ -1,0 +1,121 @@
+
+<html>
+<head>
+  <title>rogue-one</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <style>
+
+    @font-face {
+      font-family: rogueone;
+      src: url(Trajan Pro Regular.ttf); 
+    }
+
+    @font-face {
+      font-family: starwars;
+      src: url(Starjedi.ttf); 
+    }
+
+    body {
+      background: url('http://wallpaperzone.co/wp-content/uploads/2016/12/rogue-one-death-star-wars-hd-wallpaper.png') no-repeat center center;
+      background-size: cover;
+      font-family: rogueone;
+    }
+
+    .container {
+     max-width: 600px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .links {
+     line-height: 1.5;
+     padding: 25px;
+     background-color: rgba(0, 0, 0, 0.5);
+     border-radius: 3px;
+   }
+
+   a {
+     text-decoration: none;
+     color: initial;
+   }
+
+   .title {
+     font-size: 36px;
+     color: white;
+     background: url('logo.png') no-repeat center center;
+     background-size: cover;
+     border-radius: 5px;
+
+     position: absolute;
+     top: 15px;
+     left: 15px;
+
+     height: 103.7px;
+     width: 475px;
+   }
+
+   .status {
+    position: absolute;
+    top: 74px;
+    font-size: 9px;
+    left: 156px;
+    letter-spacing: 4px;
+    color: #9f8066;
+    font-weight: 900;
+  }
+
+  .status-starwars {   
+    position: relative;
+    top: 1px;
+    font-family: starwars;
+    font-size: 14px;
+  }
+
+  .link {
+   border: 2px solid #9f8066;
+   padding: 10px 30px;
+   text-align: center;
+   border-radius: 5px;
+   margin: 20px;
+   background-color: transparent;
+   transition: 300ms;
+   letter-spacing: 4px;
+   font-size: 20px;
+   color: #9f8066;
+ }
+
+ .link:hover {
+   background-color: #FAFAFA;
+ }
+</style>
+</head>
+<body>
+  <div class="title">
+    <span class="status">AN <span class="status-starwars">online</span> SERVER</span>
+  </div>
+  <div class="container">
+    <div class="links">
+      <a href="http://192.168.0.5:32400">
+        <div class="link">
+          PLEX
+        </div>
+      </a>
+      <a href="http://192.168.0.5:8989">
+        <div class="link">
+          SONARR
+        </div>
+      </a>
+      <a href="http://192.168.0.5:7878">
+        <div class="link">
+          RADARR
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
